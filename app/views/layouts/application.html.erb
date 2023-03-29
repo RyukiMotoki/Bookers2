@@ -80,6 +80,14 @@
       </nav>
     </header>
 
+    <% if flash[:notice] %>
+      <%= notice %>
+    <% elsif %>
+      <%= alert %>
+    <% end %>
+
+    <p id="notice"></p>
+
     <%= yield %>
 
     <footer>
